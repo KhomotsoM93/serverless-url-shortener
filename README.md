@@ -8,6 +8,7 @@
 - [Technologies Used](#technologies-used)
 
 ## Project Overview
+---
 
 A simple serverless application built using AWS services to shorten long URLs. This project demonstrates how to build a fully functional URL shortener using:
 
@@ -31,7 +32,11 @@ A simple serverless application built using AWS services to shorten long URLs. T
 
 ## Technologies Used
 
-- AWS Lambda (Python or Node.js)
+- AWS Lambda (Python)
 - Amazon API Gateway
 - Amazon DynamoDB
 - Amazon S3 (Static Hosting)
+
+---
+
+
