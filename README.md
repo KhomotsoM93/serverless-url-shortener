@@ -12,10 +12,10 @@
 
 A simple serverless application built using AWS services to shorten long URLs. This project demonstrates how to build a fully functional URL shortener using:
 
-- AWS Lambda
-- Amazon API Gateway
-- Amazon DynamoDB
-- Amazon S3 (for static frontend hosting)
+- AWS Lambda : Generate short code and save and fetch original URLs (in memory)
+- Amazon API Gateway : Provide HTTPS endpoints to interact with Lambda
+- IAM : Manage access permissions for Lambda and API Gateway
+- Amazon S3 (for static frontend hosting) : Host the frontend (HTML/JS form to submit URLs)
 
 ## Features
 
@@ -27,14 +27,13 @@ A simple serverless application built using AWS services to shorten long URLs. T
 ## How It Works
 
 1. Frontend sends a long URL to API Gateway
-2. Lambda generates a short code and stores it in DynamoDB
+2. Lambda generates a short code, save and fetch original URLs (in memory)
 3. Redirects via the short code are also handled by Lambda
 
 ## Technologies Used
 
 - AWS Lambda (Python)
 - Amazon API Gateway
-- Amazon DynamoDB
 - Amazon S3 (Static Hosting)
 
 ---
